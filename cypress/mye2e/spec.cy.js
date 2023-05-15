@@ -11,6 +11,11 @@ describe("template spec", () => {
   });
 
   it("Using Get with Find Eq ", () => {
+    cy.viewport(17,800)
+    cy.visit("https://docs.cypress.io/api/commands/eq#syntax");
+    cy.get('aside').find('div').find('ul').find('li').find('a');
+  });
+  it("Using Get with Find Eq ", () => {
     cy.viewport(1700,800)
     cy.visit("https://docs.cypress.io/api/commands/eq#syntax");
     cy.get('aside').find('div').find('ul').find('li').find('a');
